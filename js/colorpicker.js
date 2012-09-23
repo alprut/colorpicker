@@ -207,6 +207,9 @@
 			},
 			show = function (ev) {
 				var cal = $('#' + $(this).data('colorpickerId'));
+				if (cal.css("display") != "none") {
+					return;
+				}
 				cal.data('colorpicker').onBeforeShow.apply(this, [cal.get(0)]);
 				var pos = $(this).offset();
 				var viewPort = getViewport();
@@ -222,7 +225,7 @@
 				if (cal.data('colorpicker').onShow.apply(this, [cal.get(0)]) != false) {
 					cal.show();
 				}
-				$(document).bind('mousedown', {cal: cal}, hide);
+				$(document).bind('click', {cal: cal}, hide);
 				return false;
 			},
 			hide = function (ev) {
@@ -230,7 +233,7 @@
 					if (ev.data.cal.data('colorpicker').onHide.apply(this, [ev.data.cal.get(0)]) != false) {
 						ev.data.cal.hide();
 					}
-					$(document).unbind('mousedown', hide);
+					$(document).unbind('click', hide);
 				}
 			},
 			isChildOf = function(parentEl, el, container) {
