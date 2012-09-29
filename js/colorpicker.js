@@ -196,6 +196,13 @@
 				cal.data('colorpicker').onSubmit(col, HSBToHex(col), HSBToRGB(col), cal.data('colorpicker').el);
 				forceHide(cal);
 			},
+			clickCancel = function (ev) {
+				var cal = $(this).parent();
+				var col = cal.data('colorpicker').origColor;
+				restoreOriginal(cal);
+				cal.data('colorpicker').onChange.apply(cal, [col, HSBToHex(col), HSBToRGB(col)]);
+				forceHide(cal);
+			},
 			show = function (ev) {
 				var cal = $('#' + $(this).data('colorpickerId'));
 				if (cal.css("display") != "none") {
@@ -361,8 +368,7 @@
 			HSBToHex = function (hsb) {
 				return RGBToHex(HSBToRGB(hsb));
 			},
-			restoreOriginal = function () {
-				var cal = $(this).parent();
+			restoreOriginal = function (cal) {
 				var col = cal.data('colorpicker').origColor;
 				cal.data('colorpicker').color = col;
 				fillRGBFields(col, cal.get(0));
@@ -411,6 +417,7 @@
 						options.newColor = cal.find('div.colorpicker_new_color');
 						cal.data('colorpicker', options);
 						cal.find('div.colorpicker_btn_ok').bind('click', clickOK);
+						cal.find('div.colorpicker_btn_cancel').bind('click', clickCancel)
 						fillRGBFields(options.color, cal.get(0));
 						fillHSBFields(options.color, cal.get(0));
 						fillHexFields(options.color, cal.get(0));
