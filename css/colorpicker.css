@@ -130,22 +130,10 @@
 	top: 112px;
 	left: 282px;
 }
-.colorpicker_submit {
-	position: absolute;
-	width: 22px;
-	height: 22px;
-	background: url(../images/colorpicker_submit.png) top;
-	left: 322px;
-	top: 142px;
-	overflow: hidden;
-}
 .colorpicker_focus {
 	background-position: center;
 }
 .colorpicker_hex.colorpicker_focus {
-	background-position: bottom;
-}
-.colorpicker_submit.colorpicker_focus {
 	background-position: bottom;
 }
 .colorpicker_slider {
