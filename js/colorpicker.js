@@ -194,6 +194,7 @@
 				var col = cal.data('colorpicker').color;
 				cal.data('colorpicker').origColor = col;
 				cal.data('colorpicker').onSubmit(col, HSBToHex(col), HSBToRGB(col), cal.data('colorpicker').el);
+				forceHide(cal);
 			},
 			show = function (ev) {
 				var cal = $('#' + $(this).data('colorpickerId'));
@@ -218,12 +219,15 @@
 				$(document).bind('click', {cal: cal}, hide);
 				return false;
 			},
+			forceHide = function(cal) {
+				if (cal.data('colorpicker').onHide.apply(this, [cal.get(0)]) != false) {
+					cal.hide();
+				}
+				$(document).unbind('click', hide);
+			},
 			hide = function (ev) {
 				if (!isChildOf(ev.data.cal.get(0), ev.target, ev.data.cal.get(0))) {
-					if (ev.data.cal.data('colorpicker').onHide.apply(this, [ev.data.cal.get(0)]) != false) {
-						ev.data.cal.hide();
-					}
-					$(document).unbind('click', hide);
+					forceHide(ev.data.cal);
 				}
 			},
 			isChildOf = function(parentEl, el, container) {
