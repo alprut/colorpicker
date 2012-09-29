@@ -189,7 +189,7 @@
 				$(document).unbind('mousemove', moveSelector);
 				return false;
 			},
-			clickSubmit = function (ev) {
+			clickOK = function (ev) {
 				var cal = $(this).parent();
 				var col = cal.data('colorpicker').color;
 				cal.data('colorpicker').origColor = col;
