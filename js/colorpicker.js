@@ -406,6 +406,7 @@
 						cal.find('div.colorpicker_hue').bind('mousedown', downHue);
 						options.newColor = cal.find('div.colorpicker_new_color');
 						cal.data('colorpicker', options);
+						cal.find('div.colorpicker_btn_ok').bind('click', clickOK);
 						fillRGBFields(options.color, cal.get(0));
 						fillHSBFields(options.color, cal.get(0));
 						fillHexFields(options.color, cal.get(0));
