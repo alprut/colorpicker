@@ -144,3 +144,67 @@
 .colorpicker_slider {
 	background-position: bottom;
 }
+
+.colorpicker_btn {
+	-webkit-box-shadow:inset 0px 1px 0px 0px #858185;
+	   -moz-box-shadow:inset 0px 1px 0px 0px #858185;
+		box-shadow:inset 0px 1px 0px 0px #858185;
+	background:-webkit-gradient(linear, left top, left bottom,
+				    color-stop(0.05, #555555),
+				    color-stop(1, #121212));
+	background:-moz-linear-gradient(center top, #555555 5%, #121212 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#555555', endColorstr='#121212');
+	background-color:#555555;
+
+	-webkit-border-radius:3px;
+	   -moz-border-radius:3px;
+	        border-radius:3px;
+	border:1px solid #2f2f2f;
+
+	display:inline-block;
+	color:#aaaaaa;
+
+	font-family:Arial, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+
+	padding:2px 6px;
+	width: 34px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #000000;
+	text-align: center;
+	line-height: normal;
+}
+
+.colorpicker_btn:hover {
+	background:-webkit-gradient(linear, left top, left bottom,
+				    color-stop(0.05, #121212),
+				    color-stop(1, #555555));
+	background:-moz-linear-gradient(center top, #121212 5%, #555555 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#121212', endColorstr='#555555');
+	background-color:#121212;
+}
+
+.colorpicker_btn_cancel {
+	position: absolute;
+	left: 284px;
+	top: 146px;
+}
+
+.colorpicker_btn_cancel:active {
+	position:absolute;
+	top:147px;
+}
+
+.colorpicker_btn_ok {
+	position: absolute;
+	left: 229px;
+	top: 146px;
+}
+
+.colorpicker_btn_ok:active {
+	position:absolute;
+	top:147px;
+}
