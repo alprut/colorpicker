@@ -60,14 +60,6 @@
 	top: 13px;
 	background: #f00;
 }
-.colorpicker_current_color {
-	position: absolute;
-	width: 60px;
-	height: 30px;
-	left: 283px;
-	top: 13px;
-	background: #f00;
-}
 .colorpicker input {
 	background-color: transparent;
 	border: 1px solid transparent;
