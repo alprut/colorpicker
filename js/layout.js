@@ -19,7 +19,7 @@
 		$('#colorpickerHolder2>div').css('position', 'absolute');
 		var widt = false;
 		$('#colorSelector2').bind('click', function() {
-			$('#colorpickerHolder2').stop().animate({height: widt ? 0 : 173}, 500);
+			$('#colorpickerHolder2').stop().animate({height: widt ? 0 : 175}, 500);
 			widt = !widt;
 		});
 		$('#colorpickerField1, #colorpickerField2, #colorpickerField3').ColorPicker({

@@ -213,8 +213,8 @@
 				var viewPort = getViewport();
 				var top = pos.top + this.offsetHeight;
 				var left = pos.left;
-				if (top + 176 > viewPort.t + viewPort.h) {
-					top -= this.offsetHeight + 176;
+				if (top + 170 > viewPort.t + viewPort.h) {
+					top -= this.offsetHeight + 170;
 				}
 				if (left + 356 > viewPort.l + viewPort.w) {
 					left -= 356;

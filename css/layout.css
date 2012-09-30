@@ -143,10 +143,10 @@ h1 {
 }
 #colorSelector div {
 	position: absolute;
-	top: 3px;
-	left: 3px;
-	width: 30px;
-	height: 30px;
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
 	background: url(../images/select.png) center;
 }
 #colorSelector2 {
@@ -159,16 +159,17 @@ h1 {
 }
 #colorSelector2 div {
 	position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 28px;
-	height: 28px;
+	top: 3px;
+	left: 3px;
+	width: 30px;
+	height: 30px;
+
 	background: url(../images/select2.png) center;
 }
 #colorpickerHolder2 {
-	top: 32px;
+	top: 36px;
 	left: 0;
-	width: 356px;
+	width: 360px;
 	height: 0;
 	overflow: hidden;
 	position: absolute;
@@ -217,28 +218,28 @@ h1 {
 	height: 36px;
 }
 #colorpickerHolder2 .colorpicker_new_color {
-	border-color: #AEB5C1;
+	border-color: #474848;
 }
 
 #colorpickerHolder2 .colorpicker_btn {
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	        box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #858185;
+	   -moz-box-shadow:inset 0px 1px 0px 0px #858185;
+		box-shadow:inset 0px 1px 0px 0px #858185;
 	background:-webkit-gradient(linear, left top, left bottom,
-				    color-stop(0.05, #ededed),
-				    color-stop(1, #cbcfd7));
-	background:-moz-linear-gradient(center top, #ededed 5%, #cbcfd7 100%);
+				    color-stop(0.05, #555555),
+				    color-stop(1, #121212));
+	background:-moz-linear-gradient(center top, #555555 5%, #121212 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(
-			startColorstr='#ededed', endColorstr='#cbcfd7');
-	background-color:#ededed;
+			startColorstr='#555555', endColorstr='#121212');
+	background-color:#555555;
 
 	-webkit-border-radius:3px;
 	   -moz-border-radius:3px;
 	        border-radius:3px;
-	border:1px solid #a9b0bd;
+	border:1px solid #2f2f2f;
 
 	display:inline-block;
-	color:#575869;
+	color:#aaaaaa;
 
 	font-family:Arial, sans-serif;
 	font-size:10px;
@@ -247,17 +248,17 @@ h1 {
 	padding:2px 6px;
 	width: 34px;
 	text-decoration:none;
-	text-shadow:1px 1px 0px #ffffff;
+	text-shadow:1px 1px 0px #000000;
 	text-align: center;
 	line-height: normal;
 }
 
 #colorpickerHolder2 .colorpicker_btn:hover {
 	background:-webkit-gradient(linear, left top, left bottom,
-				    color-stop(0.05, #cbcfd7),
-				    color-stop(1, #ededed));
-	background:-moz-linear-gradient(center top, #cbcfd7 5%, #ededed 100%);
+				    color-stop(0.05, #121212),
+				    color-stop(1, #555555));
+	background:-moz-linear-gradient(center top, #121212 5%, #555555 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(
-			startColorstr='#cbcfd7', endColorstr='#ededed');
-	background-color:#cbcfd7;
+			startColorstr='#121212', endColorstr='#555555');
+	background-color:#121212;
 }
