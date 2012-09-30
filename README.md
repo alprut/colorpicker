@@ -1,7 +1,7 @@
 # jQuery colorpicker
 This is the simplified & improved jQuery color picker based on the one originally developped by Stefan Petre (http://www.eyecon.ro/colorpicker/).
 
-![colorpicker](http://github.com/alprut/colorpicker/blob/master/images/colorpicker_thumb.png?raw=true)
+![colorpicker](http://github.com/alprut/colorpicker/blob/master/images/colorpicker_thumb.jpg?raw=true)
 
 ## Differences from the original version
 * 'OK' & 'Cancel' button added for ease to understand how to submit color and cancel picking.
